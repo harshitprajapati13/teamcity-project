@@ -51,4 +51,21 @@ app.get("/query", (req, res) => {
     <html>
       <head>
         <title>Query Page</title>
-        <st
+        <style>
+          body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; }
+          h1 { color: #333; }
+          p { font-size: 18px; }
+        </style>
+      </head>
+      <body>
+        <h1>Query Page</h1>
+        <p>Submit your queries here. We will respond as soon as possible.</p>
+      </body>
+    </html>
+  `);
+});
+
+// Start server
+app.listen(port, "0.0.0.0", () => {
+  console.log(`App running on http://0.0.0.0:${port}`);
+});
