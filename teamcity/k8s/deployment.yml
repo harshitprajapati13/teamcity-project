@@ -17,7 +17,7 @@ spec:
       containers:
       - name: app-node-con
         image: us-east1-docker.pkg.dev/jovial-sunrise-471215-j6/my-docker-repo/teamcitytest:v1
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
