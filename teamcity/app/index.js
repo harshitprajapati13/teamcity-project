@@ -16,6 +16,6 @@ app.get("/query", (req, res) => {
 });
 
 // Start server
-app.listen(port, () => {
-  console.log(`App running on http://localhost:${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`App running on http://0.0.0.0:${port}`);
 });
